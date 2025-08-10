@@ -1,0 +1,189 @@
+{
+  "NotFoundPage": {
+    "title": "Page not found"
+  },
+  "Header": {
+    "about": "About",
+    "services": "Services",
+    "emea": "EMEA Hub",
+    "insights": "Insights",
+    "contact": "Contact"
+  },
+  "HeroSection": {
+    "heading": "Your Gateway to Growth in the EMEA Region",
+    "paragraph": "Strategically based in Egypt, D & Partners is a collective of experts dedicated to unlocking potential and driving success for businesses and investors across Europe, the Middle East, and Africa.",
+    "button": "Explore Our Services"
+  },
+  "About": {
+    "title": "We Are More Than Consultants; We Are Your Partners in Growth",
+    "items": [
+      {
+        "heading": "Our Story",
+        "paragraph": "Founded on the principle of partnership, we address the need for integrated, on-the-ground expertise for businesses looking to thrive in the complex EMEA landscape."
+      },
+      {
+        "heading": "Our Mission",
+        "paragraph": "To be the catalyst for business and innovation in the EMEA region, empowering our clients to achieve sustainable growth and a lasting competitive advantage."
+      },
+      {
+        "heading": "Our Vision",
+        "paragraph": "To build a more connected and prosperous EMEA by fostering collaboration, facilitating investment, and developing talent across borders."
+      }
+    ]
+  },
+  "ServicesSection": {
+    "title": "Our Core Services",
+    "paragraph": "Click on a service to learn more about how we can help you grow."
+  },
+  "EmeaHubSection": {
+    "title": "Egypt: Your Strategic Anchor in the EMEA Region",
+    "paragraph": "Positioned at the nexus of Africa, the Middle East, and Europe, Egypt offers a unique combination of strategic advantages for your business.",
+    "items": [
+      "Continents Connected",
+      "Million+ Talent Pool",
+      "COMESA Member States",
+      "Key Network Markets"
+    ]
+  },
+  "talentOutsourcing": {
+    "icon": "👥",
+    "title": "Talent Outsourcing",
+    "headline": "Build Your World-Class Team, Intelligently",
+    "body": "In today's global economy, accessing the right talent is key. We connect you with highly skilled professionals in cost-effective countries across the EMEA region.",
+    "points": [
+      "Talent Sourcing & Vetting",
+      "Managed Remote Teams",
+      "Specialized Skill Sets",
+      "Scalable Solutions"
+    ]
+  },
+  "projectManagement": {
+    "icon": "📊",
+    "title": "Project Management",
+    "headline": "From Vision to Reality, Delivered with Precision",
+    "body": "Our consultation services ensure your projects are completed on schedule, within budget, and to the highest quality standards. We bring discipline and leadership to your critical initiatives.",
+    "points": [
+      "Project Planning & Strategy",
+      "Risk Management",
+      "Budget & Schedule Control",
+      "Stakeholder Communication"
+    ]
+  },
+  "businessConsultation": {
+    "icon": "💡",
+    "title": "Business Consultation",
+    "headline": "Strategic Guidance for a Competitive Edge",
+    "body": "Our services are tailored to your unique needs, helping you navigate complexity, drive change, and create sustainable value in an evolving landscape.",
+    "points": [
+      "Corporate Strategy",
+      "Market Entry & Expansion",
+      "Operational Excellence",
+      "Financial Advisory"
+    ]
+  },
+  "softLanding": {
+    "icon": "✈",
+    "title": "Soft-Landing Programs",
+    "headline": "Your Launchpad for Success in New Markets",
+    "body": "Our programs are designed to provide a seamless, supportive, and accelerated entry into the EMEA’s most promising markets, navigating all legal and cultural hurdles.",
+    "points": [
+      "Market Research & Validation",
+      "Legal & Company Formation",
+      "Operational Setup",
+      "Networking & Partnerships"
+    ]
+  },
+  "angelInvestment": {
+    "icon": "💰",
+    "title": "Angel Investment",
+    "headline": "Fueling the Next Wave of Innovation",
+    "body": "We act as a bridge between visionary entrepreneurs and savvy investors. We don’t just facilitate funding; we build partnerships that lead to success.",
+    "points": [
+      "Curated Deal Flow for Investors",
+      "Pitch & Plan Refinement for Startups",
+      "Thorough Due Diligence",
+      "Portfolio Management"
+    ]
+  },
+  "ContactSection": {
+    "title": "Let's Start a Conversation",
+    "paragraph": "Ready to explore opportunities in the EMEA region? We invite you to get in touch.",
+    "inputs": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "service": "Select a Service of Interest"
+    },
+    "button": "Submit"
+  },
+  "Footer": {
+    "text": "© 2025 D & Partners. All Rights Reserved",
+    "location": "Cairo, Egypt"
+  },
+  "Shared": {
+    "servicesData": [
+      {
+        "icon": "👥",
+        "title": "Talent Outsourcing",
+        "headline": "Build Your World-Class Team, Intelligently",
+        "body": "In today's global economy, accessing the right talent is key. We connect you with highly skilled professionals in cost-effective countries across the EMEA region.",
+        "points": [
+          "Talent Sourcing & Vetting",
+          "Managed Remote Teams",
+          "Specialized Skill Sets",
+          "Scalable Solutions"
+        ]
+      },
+      {
+        "icon": "📊",
+        "title": "Project Management",
+        "headline": "From Vision to Reality, Delivered with Precision",
+        "body": "Our consultation services ensure your projects are completed on schedule, within budget, and to the highest quality standards. We bring discipline and leadership to your critical initiatives.",
+        "points": [
+          "Project Planning & Strategy",
+          "Risk Management",
+          "Budget & Schedule Control",
+          "Stakeholder Communication"
+        ]
+      },
+      {
+        "icon": "💡",
+        "title": "Business Consultation",
+        "headline": "Strategic Guidance for a Competitive Edge",
+        "body": "Our services are tailored to your unique needs, helping you navigate complexity, drive change, and create sustainable value in an evolving landscape.",
+        "points": [
+          "Corporate Strategy",
+          "Market Entry & Expansion",
+          "Operational Excellence",
+          "Financial Advisory"
+        ]
+      },
+      {
+        "icon": "✈️",
+        "title": "Soft-Landing Programs",
+        "headline": "Your Launchpad for Success in New Markets",
+        "body": "Our programs are designed to provide a seamless, supportive, and accelerated entry into the EMEA’s most promising markets, navigating all legal and cultural hurdles.",
+        "points": [
+          "Market Research & Validation",
+          "Legal & Company Formation",
+          "Operational Setup",
+          "Networking & Partnerships"
+        ]
+      },
+      {
+        "icon": "💰",
+        "title": "Angel Investment",
+        "headline": "Fueling the Next Wave of Innovation",
+        "body": "We act as a bridge between visionary entrepreneurs and savvy investors. We don’t just facilitate funding; we build partnerships that lead to success.",
+        "points": [
+          "Curated Deal Flow for Investors",
+          "Pitch & Plan Refinement for Startups",
+          "Thorough Due Diligence",
+          "Portfolio Management"
+        ]
+      }
+    ]
+  }
+}
