@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     console.log(body)
 
     await transporter.sendMail({
-      from: `Venttat Event Management Services <${process.env.SMTP_USER}>`,
+      from: `Venttat Event Management Services <${process.env.NEXT_SMTP_USER}>`,
       to: body.email,
       subject: "Venttat | Order Confirmation",
       html: HTML_TEMPLATE(body),

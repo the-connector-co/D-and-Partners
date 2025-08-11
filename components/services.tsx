@@ -37,7 +37,7 @@ export default function Services() {
               <div
                 key={index}
                 onClick={() => setSelectedService(index)}
-                className={`service-card bg-gray-50 p-6 rounded-lg cursor-pointer flex items-center gap-4 ${selectedService === index ? 'border border-[#C0A062] shadow-md' : ''
+                className={`service-card bg-gray-50 p-6 rounded-lg cursor-pointer flex items-center gap-4 ${selectedService === index ? 'border !border-[#C0A062] shadow-md' : ''
                   }`}
               >
                 <div className="text-3xl">{service.icon}</div>
