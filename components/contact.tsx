@@ -47,7 +47,7 @@ export default function Contact() {
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C0A062]"
               />
               <input
-                type="tel"
+                type="text"
                 placeholder={t('inputs.phone')}
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C0A062]"
               />
