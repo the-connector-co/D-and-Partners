@@ -24,23 +24,30 @@ export default function Header() {
             <Link
               key={section}
               href={`/#${section}`}
-              scroll={true}
+              scroll={false} // disable Next.js default
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById(section)?.scrollIntoView({
+                  behavior: 'smooth'
+                });
+              }}
               className="nav-link text-gray-600"
             >
               {t(section)}
             </Link>
           ))}
+
         </div>
         <div className="lang-toggle flex space-x-2">
           <Link
             href={"/en"}
-            className={`lang-toggle-btn ${locale === 'en' ? 'font-bold' : ''}`}
+            className={`lang-toggle-btn ${locale === 'en' ? 'font-bold bg-[#C0A062]' : ''}`}
           >
             EN
           </Link>
           <Link
             href={"/ar"}
-            className={`lang-toggle-btn ${locale === 'ar' ? 'font-bold' : ''}`}
+            className={`lang-toggle-btn ${locale === 'ar' ? 'font-bold bg-[#C0A062]' : ''}`}
           >
             AR
           </Link>
