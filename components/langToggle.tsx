@@ -1,50 +1,60 @@
 'use client';
 
+import clsx from 'clsx';
 import { useRouter, usePathname } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { useState } from 'react';
-import clsx from 'clsx';
 
 export default function LangToggle() {
   const locale = useLocale();
   const isArabic = locale === 'ar';
+  const nextLocale = isArabic ? 'en' : 'ar';
+
   const router = useRouter();
   const pathname = usePathname();
+  const [animatingArabic, setAnimatingArabic] = useState(isArabic);
 
-  const [animatingTo, setAnimatingTo] = useState(locale);
-
-  const changeLanguage = (targetLocale: 'en' | 'ar') => {
-    if (targetLocale === locale) return;
-
-    // Animate highlight change first
-    setAnimatingTo(targetLocale);
-
-    // Wait until animation completes (200–300ms is typical)
+  const handleToggle = () => {
+    setAnimatingArabic(!isArabic);
     setTimeout(() => {
-      router.push(`/${targetLocale}${pathname.replace(/^\/(ar|en)/, '')}`);
+      router.push(`/${nextLocale}${pathname.replace(/^\/(ar|en)/, '')}`);
     }, 300);
   };
 
   return (
-    <div className="lang-toggle flex space-x-2">
-      <button
-        onClick={() => changeLanguage('en')}
+    <button
+      onClick={handleToggle}
+      className="relative w-full max-w-24 bg-black/10 rounded-full cursor-pointer px-4 py-2 select-none"
+    >
+      {/* Toggle Circle */}
+      <div
         className={clsx(
-          'lang-toggle-btn m-0 transition-all duration-300',
-          animatingTo === 'en' ? 'font-bold !bg-[#C0A062]' : ''
+          'absolute right-[2px] top-[4px] h-8 w-[47%] bg-[#C0A062] rounded-full shadow-md transition-transform duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]',
+          animatingArabic
+            ? '-translate-x-full'
+            : 'translate-x-0'
         )}
-      >
-        EN
-      </button>
-      <button
-        onClick={() => changeLanguage('ar')}
-        className={clsx(
-          'lang-toggle-btn m-0 transition-all duration-300',
-          animatingTo === 'ar' ? 'font-bold !bg-[#C0A062]' : ''
-        )}
-      >
-        AR
-      </button>
-    </div>
+      />
+
+      {/* Labels */}
+      <div className="relative flex justify-between w-full font-bold">
+        <span
+          className={clsx(
+            'transition-colors duration-300',
+            animatingArabic ? 'opacity-100' : 'opacity-50 text-black'
+          )}
+        >
+          Ar
+        </span>
+        <span
+          className={clsx(
+            'transition-colors duration-300',
+            animatingArabic ? 'opacity-50' : 'opacity-100 text-black'
+          )}
+        >
+          En
+        </span>
+      </div>
+    </button>
   );
 }
