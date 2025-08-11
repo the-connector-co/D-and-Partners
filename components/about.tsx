@@ -12,7 +12,7 @@ export default function About() {
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="text-left">
+          <div className="">
             <h3 className="text-xl font-bold mb-4 text-[#C0A062]">
               {t('items.0.heading')}
             </h3>
@@ -33,8 +33,7 @@ export default function About() {
             </p>
           </div>
           <div>
-            {/* <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop" alt="Business partners collaborating" className="rounded-lg shadow-xl w-full h-auto" /> */}
-            <Image src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop" alt="Logo" width={150} height={150} />
+            <Image className="w-full h-full" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop" alt="Logo" width={250} height={250} />
           </div>
         </div>
       </div>
