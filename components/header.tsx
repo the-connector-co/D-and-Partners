@@ -41,13 +41,13 @@ export default function Header() {
         <div className="lang-toggle flex space-x-2">
           <Link
             href={"/en"}
-            className={`lang-toggle-btn ${locale === 'en' ? 'font-bold bg-[#C0A062]' : ''}`}
+            className={`lang-toggle-btn m-0 ${locale === 'en' ? 'font-bold !bg-[#C0A062]' : ''}`}
           >
             EN
           </Link>
           <Link
             href={"/ar"}
-            className={`lang-toggle-btn ${locale === 'ar' ? 'font-bold bg-[#C0A062]' : ''}`}
+            className={`lang-toggle-btn m-0 ${locale === 'ar' ? 'font-bold !bg-[#C0A062]' : ''}`}
           >
             AR
           </Link>
