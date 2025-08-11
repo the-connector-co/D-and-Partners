@@ -4,7 +4,7 @@ import StatCounter from "./startCounter";
 export default function EmeaHub() {
   const t = useTranslations('EmeaHubSection');
   return (
-    <section id="emea" className="py-20">
+    <section id="insights" className="py-20">
       <div className="container mx-auto px-6 text-center mb-12">
         <h2 className="text-3xl font-bold text-gray-800">{t('title')}</h2>
         <p className="mt-2 text-gray-600 max-w-3xl mx-auto">{t('paragraph')}</p>

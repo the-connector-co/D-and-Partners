@@ -47,7 +47,7 @@
     "paragraph": "Click on a service to learn more about how we can help you grow."
   },
   "EmeaHubSection": {
-    "title": "Egypt: Your Strategic Anchor in the EMEA Region",
+    "title": "Your Strategic Anchor in the EMEA Region",
     "paragraph": "Positioned at the nexus of Africa, the Middle East, and Europe, Egypt offers a unique combination of strategic advantages for your business.",
     "items": [
       "Continents Connected",
@@ -196,5 +196,11 @@
         ]
       }
     ]
+  },
+  "Errors": {
+    "nameMin": "Name must be at least 2 characters",
+    "invalidEmail": "Please enter a valid email address",
+    "serviceRequired": "Please select a service",
+    "messageMin": "Message must be at least 10 characters"
   }
 }
