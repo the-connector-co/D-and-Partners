@@ -1,26 +1,16 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 import { Link } from '../i18n/navigation';
 
 export default function Hero() {
   const t = useTranslations('HeroSection');
-  const pathname = usePathname();
 
   const handleScroll = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    // If already on the homepage, intercept click to smooth scroll
-    if (pathname === '/') {
-      e.preventDefault();
-      handleScroll(id);
     }
   };
 
@@ -56,9 +46,13 @@ export default function Hero() {
 
         <Link
           href="/#services"
-          scroll={false}
-          onClick={(e) => handleClick(e, 'services')}
-          className="mt-8 inline-block bg-[#C0A062] text-white font-bold py-3 px-8 rounded-full hover:bg-[#a98c56] transition-colors"
+          scroll={false} // disable Next.js default
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("services")?.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }} className="mt-8 inline-block bg-[#C0A062] text-white font-bold py-3 px-8 rounded-full hover:bg-[#a98c56] transition-colors"
         >
           {t('button')}
         </Link>

@@ -3,14 +3,10 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link'
 import Image from 'next/image';
-import { useEffect } from 'react';
 
 export default function Header() {
   const t = useTranslations('Header');
   const locale = useLocale();
-  useEffect(() => {
-    console.log(locale)
-  })
 
   return (
     <header className="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
