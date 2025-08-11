@@ -4,6 +4,7 @@ import EmeaHub from "../../components/emeaHub";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import Hero from "../../components/hero";
+import Insights from "../../components/insights";
 import Services from "../../components/services";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Services />
       <EmeaHub />
+      <Insights />
       <Contact />
       <Footer />
     </main>

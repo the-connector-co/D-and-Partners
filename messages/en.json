@@ -31,6 +31,17 @@
       }
     ]
   },
+  "InsightsSection": {
+    "title": "Navigating the Now, Shaping the Next",
+    "paragraph": "Our expert perspectives on the trends shaping business across the EMEA region.",
+    "items": [
+      {
+        "title": "The Rise of Tech Hubs in North Africa: An Investor's Guide",
+        "paragraph": "Beyond the headlines, a quiet revolution is taking place in North Africa's tech scene. We explore the key cities to watch...",
+        "button": "Read More"
+      }
+    ]
+  },
   "ServicesSection": {
     "title": "Our Core Services",
     "paragraph": "Click on a service to learn more about how we can help you grow."
