@@ -29,7 +29,7 @@ export default function LangToggle() {
       {/* Toggle Circle */}
       <div
         className={clsx(
-          'absolute right-[2px] top-[4px] h-8 w-[47%] bg-[#C0A062] rounded-full shadow-md transition-transform duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]',
+          'absolute right-[2px] top-[4px] h-8 w-[47%] !bg-[#C0A062] rounded-full shadow-md transition-transform duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]',
           animatingArabic
             ? '-translate-x-full'
             : 'translate-x-0'
@@ -41,7 +41,7 @@ export default function LangToggle() {
         <span
           className={clsx(
             'transition-colors duration-300',
-            animatingArabic ? 'opacity-100' : 'opacity-50 text-black'
+            animatingArabic ? ' text-white' : ' text-black font-normal'
           )}
         >
           AR
@@ -49,7 +49,7 @@ export default function LangToggle() {
         <span
           className={clsx(
             'transition-colors duration-300',
-            animatingArabic ? 'opacity-50' : 'opacity-100 text-black'
+            animatingArabic ? ' text-black font-normal' : ' text-white'
           )}
         >
           EN
