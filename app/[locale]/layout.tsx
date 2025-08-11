@@ -4,6 +4,7 @@ import "../globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
+import Header from "../../components/header";
 
 const roboto = Roboto({
   variable: "--font-roboto",

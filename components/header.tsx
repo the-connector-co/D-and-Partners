@@ -1,15 +1,15 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link'
 import Image from 'next/image';
+import LangToggle from './langToggle';
 
 export default function Header() {
   const t = useTranslations('Header');
-  const locale = useLocale();
 
   return (
-    <header className="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+    <header dir='ltr' className="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className='max-w-[150px]'>
           <Image className='w-full' src="/logo.png" alt="Logo" width={150} height={150} />
@@ -32,22 +32,9 @@ export default function Header() {
               {t(section)}
             </Link>
           ))}
+        </div>
 
-        </div>
-        <div className="lang-toggle flex space-x-2">
-          <Link
-            href={"/en"}
-            className={`lang-toggle-btn m-0 ${locale === 'en' ? 'font-bold !bg-[#C0A062]' : ''}`}
-          >
-            EN
-          </Link>
-          <Link
-            href={"/ar"}
-            className={`lang-toggle-btn m-0 ${locale === 'ar' ? 'font-bold !bg-[#C0A062]' : ''}`}
-          >
-            AR
-          </Link>
-        </div>
+        <LangToggle />
       </nav>
     </header>
   );
