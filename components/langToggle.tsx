@@ -44,7 +44,7 @@ export default function LangToggle() {
             animatingArabic ? 'opacity-100' : 'opacity-50 text-black'
           )}
         >
-          Ar
+          AR
         </span>
         <span
           className={clsx(
@@ -52,7 +52,7 @@ export default function LangToggle() {
             animatingArabic ? 'opacity-50' : 'opacity-100 text-black'
           )}
         >
-          En
+          EN
         </span>
       </div>
     </button>
