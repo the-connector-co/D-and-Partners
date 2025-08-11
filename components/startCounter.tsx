@@ -15,7 +15,7 @@ const StatCounter = ({ label, target }: StatCounterProps) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          let start = 0;
+          const start = 0;
           const end = target;
           if (start === end) return;
 

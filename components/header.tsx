@@ -1,7 +1,6 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link'
 import Image from 'next/image';
 import { useEffect } from 'react';
@@ -12,13 +11,6 @@ export default function Header() {
   useEffect(() => {
     console.log(locale)
   })
-  const pathname = usePathname();
-  const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
 
   return (
     <header className="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">

@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function About() {
   const t = useTranslations('About');
@@ -32,7 +33,8 @@ export default function About() {
             </p>
           </div>
           <div>
-            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop" alt="Business partners collaborating" className="rounded-lg shadow-xl w-full h-auto" />
+            {/* <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop" alt="Business partners collaborating" className="rounded-lg shadow-xl w-full h-auto" /> */}
+            <Image src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop" alt="Logo" width={150} height={150} />
           </div>
         </div>
       </div>
