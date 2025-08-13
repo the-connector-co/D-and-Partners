@@ -11,7 +11,7 @@
   },
   "HeroSection": {
     "heading": "Your Gateway to Growth in the EMEA Region",
-    "paragraph": "Strategically based in Egypt, D & Partners is a collective of experts dedicated to unlocking potential and driving success for businesses and investors across Europe, the Middle East, and Africa.",
+    "paragraph": "Strategically based in Egypt, D&Partners is a collective of experts dedicated to unlocking potential and driving success for businesses and investors across Europe, the Middle East, and Africa.",
     "button": "Explore Our Services"
   },
   "About": {
@@ -48,7 +48,7 @@
   },
   "EmeaHubSection": {
     "title": "Your Strategic Anchor in the EMEA Region",
-    "paragraph": "Positioned at the nexus of Africa, the Middle East, and Europe, Egypt offers a unique combination of strategic advantages for your business.",
+    "paragraph": "Positioned at the nexus of Africa, the Middle East, Europe, and Egypt offers a unique combination of strategic advantages for your business.",
     "items": [
       "Continents Connected",
       "Million+ Talent Pool",
@@ -130,8 +130,8 @@
     "button": "Submit"
   },
   "Footer": {
-    "text": "© 2025 D & Partners. All Rights Reserved",
-    "location": "Cairo, Egypt"
+    "text": "© 2025 D&Partners. All Rights Reserved",
+    "location": "Cairo &, Alex, Egypt"
   },
   "Shared": {
     "servicesData": [
